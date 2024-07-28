@@ -25,50 +25,28 @@ const Services = () => {
     const isInView = useInView(ref, { margin: '-100px' })
 
     return (
-        <motion.div className='services' variants={variants} initial='initial' ref={ref} animate={ 'animate'}>
-            <motion.div className="textContainer">
+        <motion.div className='services' variants={variants} initial='initial' ref={ref} animate={'animate'}>
+            {/* <motion.div className="textContainer">
                 <p>
                     I focus on helping your brand grow
                     <br />
                     and move forward
                 </p>
                 <hr />
-            </motion.div>
+            </motion.div> */}
             <motion.div className="titleContainer" variants={variants} >
                 <div className="title">
-                    <img src="/people.webp" alt="" />
-                    <h1><motion.b whileHover={{ color: 'orange' }}>Unique</motion.b> Ideas</h1>
-                </div>
-                <div className="title">
-                    <h1><motion.b whileHover={{ color: 'orange' }}>For Your</motion.b> Business</h1>
-                    <button>WHAT WE DO?</button>
+                    {/* <img src="/people.webp" alt="" /> */}
+                    <h1><motion.b whileHover={{ color: 'orange' }}>About </motion.b> Me</h1>
                 </div>
             </motion.div>
-            <motion.div className="listContainer" variants={variants} >
-                <motion.div className="box" whileHover={{ background: 'lightgray', color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur laboriosam saepe nisi laborum rem dolorum amet esse. Placeat aliquid saepe explicabo deserunt similique fuga doloremque possimus optio repellendus aspernatur.</p>
-                    <button>click</button>
-                </motion.div>
-                <motion.div className="box" whileHover={{ background: 'lightgray', color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur laboriosam saepe nisi laborum rem dolorum amet esse. Placeat aliquid saepe explicabo deserunt similique fuga doloremque possimus optio repellendus aspernatur.</p>
-                    <button>click</button>
-
-                </motion.div>
-                <motion.div className="box" whileHover={{ background: 'lightgray', color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur laboriosam saepe nisi laborum rem dolorum amet esse. Placeat aliquid saepe explicabo deserunt similique fuga doloremque possimus optio repellendus aspernatur.</p>
-                    <button>click</button>
-
-                </motion.div>
-                <motion.div className="box" whileHover={{ background: 'lightgray', color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur laboriosam saepe nisi laborum rem dolorum amet esse. Placeat aliquid saepe explicabo deserunt similique fuga doloremque possimus optio repellendus aspernatur.</p>
-                    <button>click</button>
-
-                </motion.div>
-
+            <motion.div className="parContainer" variants={variants} >
+                With over one year of professional experience in Software Engineering, I excel in delivering scalable code collaboratively
+                and independently. My expertise spans a broad spectrum of frontend and backend technologies, enabling me to achieve
+                outstanding results in diverse projects, including web development, backend infrastructure, and mobile applications. My
+                goal is to leverage my comprehensive skill set to drive innovative projects and deliver exceptional results. I am eager to
+                continue learning new skills to further enhance my expertise in a dynamic and challenging environment and plan on
+                pursuing a Master’s Degree in Artificial Intelligence.
             </motion.div>
         </motion.div>
     )

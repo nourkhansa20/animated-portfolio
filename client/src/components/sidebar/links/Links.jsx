@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 
 const variants = {
     open: {
@@ -29,19 +30,21 @@ const Links = () => {
 
     const items = [
         "Homepage",
-        "Services",
+        "About",
         "Portfolio",
         "Contact",
-        "About",
     ]
 
     return (
         <motion.div className='links' variants={variants}>
             {
                 items.map(item => (
-                    <motion.a href={`#${item}`} key={item} variants={itemsVariants}  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                        {item}
-                    </motion.a>
+                    <Link to={item}>
+                        <motion.a key={item} variants={itemsVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                            {item}
+                        </motion.a>
+                    </Link>
+
                 ))
             }
         </motion.div>

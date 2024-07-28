@@ -4,34 +4,31 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 const items = [
     {
         id: 1,
-        title: "React porject",
-        img: 'https://images.pexels.com/photos/27143629/pexels-photo-27143629/free-photo-of-seagull.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus aut assumenda, sed laborum architecto illo nemo, ut molestias reiciendis numquam, porro ullam eos voluptates hic aspernatur et tempore praesentium.'
+        title: "E-commerce",
+        img: '/e-commerce.png',
+        to: "http://16.171.232.54/ecommerce/home",
+        desc: `I built this website to improve my skills and apply my knowledge, and I am still working on it at the moment. It's an e- commerce 
+                site for selling a variety of products, featuring a wishlist, shopping cart, and checkout process.The website also includes product
+                reviews, user ratings, order tracking, inventory management, and detailed product descriptions with high - quality images.The entire website is built from scratch, with no 
+                templates used. `
     },
     {
         id: 2,
-        title: "React Re porject",
-        img: 'https://images.pexels.com/photos/27143629/pexels-photo-27143629/free-photo-of-seagull.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus aut assumenda, sed laborum architecto illo nemo, ut molestias reiciendis numquam, porro ullam eos voluptates hic aspernatur et tempore praesentium.'
+        title: "OBN",
+        img: '/obn.png',
+        desc: `This website is designed for an AI module that allows users to upload one or multiple photos, sending them to the AI for object 
+                detection and separation. Users can select objects to separate using points or boxes, enabling multiple selections simultaneously. 
+                All selection tools were developed from scratch. A key challenge in this project was transmitting the coordinates of the selected 
+                objects to the AI and managing multiple selections effectively.`
     },
     {
         id: 3,
-        title: "Next porject",
-        img: 'https://images.pexels.com/photos/27143629/pexels-photo-27143629/free-photo-of-seagull.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus aut assumenda, sed laborum architecto illo nemo, ut molestias reiciendis numquam, porro ullam eos voluptates hic aspernatur et tempore praesentium.'
+        title: "Garage internal system",
+        img: '/garage.png',
+        desc: `This project aimed to manage cars entering the garage, tracking each vehicle along with client details and all repair items changed. 
+                The system provided estimates, including discounts and taxes, with an option to print. Additionally, there was a comprehensive 
+                check-up form for the garage's service, covering all car components `
     },
-    {
-        id: 4,
-        title: "JS porject",
-        img: 'https://images.pexels.com/photos/27143629/pexels-photo-27143629/free-photo-of-seagull.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus aut assumenda, sed laborum architecto illo nemo, ut molestias reiciendis numquam, porro ullam eos voluptates hic aspernatur et tempore praesentium.'
-    },
-    {
-        id: 5,
-        title: "Healthy app",
-        img: 'https://images.pexels.com/photos/27143629/pexels-photo-27143629/free-photo-of-seagull.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus aut assumenda, sed laborum architecto illo nemo, ut molestias reiciendis numquam, porro ullam eos voluptates hic aspernatur et tempore praesentium.'
-    }
 ]
 
 const Single = ({ item }) => {
@@ -53,7 +50,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{ y }}>
                         <h2 >{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <button><a href={item.to} target='_blank'>See Demo</a> </button>
                     </motion.div>
                 </div>
 

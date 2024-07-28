@@ -5,6 +5,7 @@
     max-width: 1366px;
     margin: auto;
     display: flex;
+    justify-items: center;
     align-items: center;
     gap: 50px;
 
@@ -23,7 +24,9 @@
         gap: 40px;
 
         @include mobile {
-            gap: 20px;
+            flex: 0;
+
+            gap: 5px;
             text-align: center;
             align-items: center;
             margin-top: 70px;
@@ -38,8 +41,32 @@
             }
         }
 
-        span {
-            font-weight: 300;
+        .contactInfoContainer {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            @include mobile {
+                flex-direction: row;
+
+            }
+
+            h2 {
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+
+            span {
+                display: inline-block;
+                margin-top: 5px;
+                font-weight: 300;
+
+                @include mobile {
+                    font-size: 12px;
+                }
+            }
+
         }
     }
 
@@ -47,6 +74,7 @@
         flex: 1;
 
         @include mobile {
+            flex: 0;
             width: 100%;
             padding: 50px;
         }

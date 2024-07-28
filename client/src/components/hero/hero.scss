@@ -5,6 +5,7 @@
     background: linear-gradient(180deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
+    padding: 5px;
 
     // @include mobile {
     //     height: 100vh ;
@@ -51,6 +52,7 @@
         }
 
         .buttons {
+            z-index: 500;
             button {
                 padding: 20px;
                 border: 1px solid white;

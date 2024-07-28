@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import './hero.scss'
 import { motion } from 'framer-motion'
 
@@ -44,16 +45,23 @@ const Hero = () => {
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial='initial' animate='animate'>
                     <motion.h2 variants={textVariants}>NOUR ALKHANSA</motion.h2>
-                    <motion.h1 variants={textVariants}>Full stack web developer</motion.h1>
+                    <motion.h1 variants={textVariants}>Full-stack developer</motion.h1>
                     <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants}>See the lastest works</motion.button>
-                        <motion.button variants={textVariants}>Contact me</motion.button>
+                        <motion.button variants={textVariants}>
+                            <Link to='Portfolio'>See the lastest works</Link>
+                        </motion.button>
+
+                        <motion.button variants={textVariants}>
+                            <Link to='Contact'>
+                                Contact me
+                            </Link>
+                        </motion.button>
                     </motion.div>
                     <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
                 </motion.div>
             </div>
             <motion.div className="sliddingTextContainer" variants={sliderVariants} initial='initial' animate="animate">
-                Writer content creator ...
+                Full-stack developer ....
             </motion.div>
 
             {/* <div className="imageContainer">

@@ -5,18 +5,19 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    gap: 4ex;
     padding: 4ex;
+        justify-content: center;
 
     .textContainer {
-        flex: 1;
         align-self: flex-end;
         display: flex;
         align-items: center;
         gap: 20px;
 
         @include mobile {
-            align-self: center;
+            align-self: start;
             text-align: center;
             flex-direction: column;
         }
@@ -26,6 +27,12 @@
             font-size: 20px;
             color: gray;
             text-align: right;
+
+            @include mobile {
+                font-size: 15px;
+                width: 150px;
+            }
+    
         }
 
         hr {
@@ -40,20 +47,18 @@
     }
 
     .titleContainer {
-        flex: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         @include mobile {
             width: 100%;
-
         }
 
         .title {
             display: flex;
             align-items: center;
-            gap: 50px;
+            // gap: 50px;
 
             @include mobile {
                 flex-direction: column;
@@ -97,6 +102,19 @@
                     height: 50px;
                 }
             }
+
+        }
+    }
+
+    .parContainer {
+        max-width: 1366px;
+        font-size: 24px;
+        line-height: 4ex;
+
+        @include mobile {
+            font-size: 14px;
+            text-align: center;
+
 
         }
     }
