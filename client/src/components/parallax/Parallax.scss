@@ -29,8 +29,11 @@
         z-index: 3;
 
         @include mobile {
-            background-size: contain;
             background-repeat: no-repeat;
+        }
+
+        @include tablet {
+            background-size: contain;
         }
     }
 
@@ -42,6 +45,7 @@
         height: 100%;
         position: absolute;
         z-index: 2;
+
         @include mobile {
             background-size: contain;
             background-repeat: no-repeat;
@@ -56,6 +60,6 @@
         height: 100%;
         position: absolute;
         z-index: 1;
-        
+
     }
 }

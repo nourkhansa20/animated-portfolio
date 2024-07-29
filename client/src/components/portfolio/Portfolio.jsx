@@ -16,6 +16,7 @@ const items = [
         id: 2,
         title: "OBN",
         img: '/obn.png',
+        to: 'https://youtu.be/wkoG4LFtdo0',
         desc: `This website is designed for an AI module that allows users to upload one or multiple photos, sending them to the AI for object 
                 detection and separation. Users can select objects to separate using points or boxes, enabling multiple selections simultaneously. 
                 All selection tools were developed from scratch. A key challenge in this project was transmitting the coordinates of the selected 
@@ -24,6 +25,7 @@ const items = [
     {
         id: 3,
         title: "Garage internal system",
+        to: 'https://youtu.be/14xIZh3kdKI',
         img: '/garage.png',
         desc: `This project aimed to manage cars entering the garage, tracking each vehicle along with client details and all repair items changed. 
                 The system provided estimates, including discounts and taxes, with an option to print. Additionally, there was a comprehensive 

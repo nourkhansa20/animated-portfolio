@@ -13,7 +13,7 @@
     // }
 
     .wrapper {
-        max-width: 1366px;
+        max-width: 1300px;
         height: 100%;
         margin: auto;
 
@@ -52,7 +52,7 @@
         }
 
         .buttons {
-            z-index: 500;
+            z-index: 3;
             button {
                 padding: 20px;
                 border: 1px solid white;
