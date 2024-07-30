@@ -20,17 +20,25 @@ const variants = {
 
 const Contact = () => {
     const formRef = useRef()
+    const emailRef = useRef()
+    const messgRef = useRef()
+    const nameRef = useRef()
+    const [isSending, setIsSending] = useState(false)
+
     const [error, setError] = useState(null)
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        setIsSending(true)
         emailjs
             .sendForm('service_iuzer9e', 'template_5fdf42k', formRef.current, {
                 publicKey: 'r2b1zgCXyNrt_lW45',
             })
             .then(
                 () => {
+                    emailRef.current.value = ''
+                    nameRef.current.value = ''
+                    messgRef.current.value = ''
                     setError(false)
                 },
                 (error) => {
@@ -38,6 +46,8 @@ const Contact = () => {
                     setError(true)
                 },
             );
+        setIsSending(false)
+
     };
 
     return (
@@ -62,10 +72,14 @@ const Contact = () => {
             </motion.div>
             <div className="formContainer">
                 <form ref={formRef} onSubmit={sendEmail}>
-                    <input type='text' required placeholder='Name' name='name' />
-                    <input type='email' required placeholder='Email' name='email' />
-                    <textarea rows={8} placeholder='Message' name='message'></textarea>
-                    <button>Submit</button>
+                    <input type='text' required placeholder='Name' name='name' ref={nameRef} />
+                    <input type='email' required placeholder='Email' name='email' ref={emailRef} />
+                    <textarea rows={8} placeholder='Message' name='message' ref={messgRef}></textarea>
+                    <button>
+                        {
+                            isSending ? 'Sending ...' : 'Submit'
+                        }
+                    </button>
                 </form>
             </div>
         </motion.div>
