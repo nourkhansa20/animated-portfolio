@@ -17,8 +17,8 @@ const Navbar = () => {
                     Nour Al Khansa
                 </motion.span>
                 <div className="social">
-                    <a href="https://www.linkedin.com/in/nour-khansa-986787256/" target='_blank'><GithubIcon style={{ width: '20px', fill: 'white' }} /></a>
-                    <a href="https://github.com/nourkhansa20" target='_blank'><LinkedinIcon style={{ width: '20px', fill: 'white' }}  /></a>
+                    <a href="https://github.com/nourkhansa20" target='_blank'><GithubIcon style={{ width: '20px', fill: 'white' }} /></a>
+                    <a href="https://www.linkedin.com/in/nour-khansa-986787256/" target='_blank'><LinkedinIcon style={{ width: '20px', fill: 'white' }}  /></a>
 
                 </div>
             </div>
