@@ -7,7 +7,7 @@ const items = [
         title: "E-commerce",
         img: '/e-commerce.png',
         to: "http://16.171.232.54/ecommerce/home",
-        desc: `I built this website to improve my skills and apply my knowledge, and I am still working on it at the moment. It's an e- commerce 
+        desc: `It's an e- commerce 
                 site for selling a variety of products, featuring a wishlist, shopping cart, and checkout process.The website also includes product
                 reviews, user ratings, order tracking, inventory management, and detailed product descriptions with high - quality images.The entire website is built from scratch, with no 
                 templates used. `
