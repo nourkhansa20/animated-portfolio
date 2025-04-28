@@ -16,7 +16,7 @@ const items = [
         id: 2,
         title: "OBN",
         img: '/obn.png',
-        to: 'https://youtu.be/wkoG4LFtdo0',
+        to: 'https://obneasysort.com/',
         desc: `This website is designed for an AI module that allows users to upload one or multiple photos, sending them to the AI for object 
                 detection and separation. Users can select objects to separate using points or boxes, enabling multiple selections simultaneously. 
                 All selection tools were developed from scratch. A key challenge in this project was transmitting the coordinates of the selected 
