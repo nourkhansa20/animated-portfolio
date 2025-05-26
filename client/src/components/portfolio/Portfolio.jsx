@@ -6,7 +6,7 @@ const items = [
         id: 1,
         title: "E-commerce",
         img: '/e-commerce.png',
-        to: "http://16.171.232.54/ecommerce/home",
+        to: "http://18.222.203.245/ecommerce/home",
         desc: `It's an e- commerce 
                 site for selling a variety of products, featuring a wishlist, shopping cart, and checkout process.The website also includes product
                 reviews, user ratings, order tracking, inventory management, and detailed product descriptions with high - quality images.The entire website is built from scratch, with no 
